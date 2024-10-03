@@ -1,3 +1,4 @@
+#!/usr/bin/node
 const calculateNumber = (a, b) => {
   return Math.round(a + b);
 };
