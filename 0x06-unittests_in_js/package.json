@@ -1,0 +1,9 @@
+{
+    "scripts": {
+        "test": "npx mocha"
+    },
+    "dependencies": {
+        "mocha": "^10.7.3",
+        "semistandard": "^17.0.0"
+    }
+}
