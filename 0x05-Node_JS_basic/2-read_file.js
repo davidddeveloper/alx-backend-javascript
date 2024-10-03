@@ -16,7 +16,6 @@ const countStudents = (path) => {
       }
     });
     console.log(`Number of students: ${data.length - 1}`);
-    console.log(data);
 
     process.stdout.write(`Number of students in CS: ${csStudents.length}. `);
     process.stdout.write('List: ');
