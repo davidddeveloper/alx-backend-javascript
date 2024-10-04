@@ -41,5 +41,3 @@ const countStudents = (path) => {
     throw Error('Cannot load the database');
   }
 };
-
-countStudents('database.csv');
