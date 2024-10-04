@@ -1,4 +1,4 @@
-const calculateNumber = (a, b) => {
+function calculateNumber (a, b) {
   return Math.round(a + b);
 };
 
