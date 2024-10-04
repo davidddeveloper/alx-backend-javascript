@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const countStudents = (path) => {
+export default function countStudents (path) {
   try {
     let data = fs.readFileSync(path, 'utf-8');
     const sweStudents = [];
@@ -40,4 +40,4 @@ const countStudents = (path) => {
   } catch (e) {
     throw Error('Cannot load the database');
   }
-};
+}
