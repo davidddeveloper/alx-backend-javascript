@@ -19,11 +19,24 @@ const countStudents = (path) => {
 
     process.stdout.write(`Number of students in CS: ${csStudents.length}. `);
     process.stdout.write('List: ');
-    csStudents.forEach(student => process.stdout.write(`${student.split(',')[0]} `));
+    csStudents.forEach((student, idx) => {
+      if (idx === (csStudents.length - 1)) {
+        process.stdout.write(`${student.split(',')[0]}`);
+      } else {
+        process.stdout.write(`${student.split(',')[0]}, `);
+      }
+    });
+
     console.log();
     process.stdout.write(`Number of students in SWE: ${sweStudents.length}. `);
     process.stdout.write('List: ');
-    sweStudents.forEach(student => process.stdout.write(`${student.split(',')[0]} `));
+    sweStudents.forEach((student, idx) => {
+      if (idx === (sweStudents.length - 1)) {
+        process.stdout.write(`${student.split(',')[0]}`);
+      } else {
+        process.stdout.write(`${student.split(',')[0]}, `);
+      }
+    });
   } catch (e) {
     throw Error('Cannot load the database');
   }
