@@ -6,7 +6,9 @@ function countStudents(path) {
     const sweStudents = [];
     const csStudents = [];
 
-    data = data.split('\r\n').slice(1);
+    data = data.split('\n');
+    data = data.slice(1);
+
     data.forEach((item) => {
       if (item.endsWith('CS')) {
         csStudents.push(item);
@@ -15,7 +17,7 @@ function countStudents(path) {
         sweStudents.push(item);
       }
     });
-    console.log(`Number of students: ${data.length - 1}`);
+    console.log(`Number of students: ${data.length}`);
 
     process.stdout.write(`Number of students in CS: ${csStudents.length}. `);
     process.stdout.write('List: ');
